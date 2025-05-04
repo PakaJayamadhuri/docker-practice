@@ -11,7 +11,7 @@ pipeline {
         choice(name:'APPVERSION',choices:['1.1','1.2','1.3'])
     }
      environment{
-        BUILD_SERVER='ec2-user@172.31.4.110'
+        BUILD_SERVER='ec2-user@172.31.8.163'
         DEPLOY_SERVER='ec2-user@172.31.4.216'
         IMAGE_NAME='pakajayamadhuri/addbook:$BUILD_NUMBER'
      }
